@@ -17,7 +17,7 @@ body {
     font-size: 0.6rem;
     padding: 7px;
     padding-right: 25px;
-    justify-content: end;
+    justify-content:flex-end;
     background-color:#0082f9 ;
     color: #fff;
     h3 {
@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 20px 0px 13px 0px;
 
     .container-logo img{
        width: 75px;
@@ -87,7 +87,7 @@ body {
     background-image:url("/images/jumbotron.jpg") ;
     height: 300px;
     background-size: cover;
-    position: relative;
+
 }
 
 
@@ -95,8 +95,7 @@ body {
 
 .container-comics {
     background-color: #1C1C1C;
-    min-height: 300px;
-
+    position: relative;
     .content-dc-comics {
         width: 70%;
         margin: auto;
@@ -104,6 +103,92 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
+
+        .comics-card {
+            width: calc(100% / 6 - 15px * 5 / 6);
+            cursor: pointer;
+
+            .img-box{
+                width: 130px;
+                height: 130px;
+                overflow: hidden;
+            }
+        
+            img {
+                width: 100%;
+            }
+        
+            p {
+                color: #fff;
+                font-size: 0.6rem;
+                font-weight: 600;
+                padding: 10px 0;
+            }
+        }
     }
 
+    .label-series {
+        background-color: #0082f9;
+        padding: 8px 18px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.8rem;
+        position: absolute;
+        top: -15px;
+        left: 168px;
+        cursor: pointer;
+    }
+
+    .container-btn {
+        display: flex;
+        justify-content: center;
+
+        button {
+            color:#fff;
+            font-weight: 600;
+            background-color: #0082f9;
+            border: none;
+            padding: 10px 40px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+    }
+
+}
+
+/* ****** FOOTER ****** */
+
+.top-footer {
+    background-color:#0082f9 ;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 0px;
+        width: 80%;
+        li {
+          font-size: 0.6rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: #fff;
+            margin-left: 8px;
+          }
+        }
+        img {
+          height: 35px;
+        }
+        .icon-power {
+          height: 25px;
+        }
+
+    }
 }
