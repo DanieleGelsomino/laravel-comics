@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  font-size: 0.6rem;
+  padding: 7px;
+  padding-right: 25px;
+  justify-content: end;
+  background-color: #0082f9;
+  color: #fff;
+}
+
+.top-bar h3 {
+  margin-right: 80px;
+  font-weight: 600;
+}
+
+.menu-navbar {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.menu-navbar .container-logo img {
+  width: 75px;
+}
+
+.menu-navbar .container-nav-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+.menu-navbar .container-nav-list ul li a {
+  font-size: 0.7rem;
+  margin: 0px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 40px;
+  color: grey;
+  cursor: pointer;
+}
+
+.menu-navbar .container-nav-list ul li a:hover {
+  color: #047ff7;
+  border-bottom: 4px solid #047ff7;
+}
+
+.menu-navbar .search {
+  display: flex;
+}
+
+.menu-navbar .search-bar {
+  border: none;
+  text-align: right;
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+.menu-navbar .search-bar:focus-visible {
+  outline: none;
+  border-bottom: 2px solid #047ff7;
+}
+
+.menu-navbar button {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-navbar button i {
+  color: gray;
+}
+
+.jumbotron {
+  background-image: url("/images/jumbotron.jpg");
+  height: 300px;
+  background-size: cover;
+  position: relative;
+}
+
