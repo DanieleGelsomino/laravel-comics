@@ -172,7 +172,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 30px 0px;
-  width: 80%;
+  width: 70%;
 }
 
 .top-footer ul li {
@@ -195,5 +195,103 @@ body {
 
 .top-footer ul .icon-power {
   height: 25px;
+}
+
+.main-footer {
+  background-image: url("/images/footer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer .link-list {
+  background-image: url("/images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: 380px;
+  background-position: right;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  color: #fff;
+}
+
+.main-footer .link-list h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.main-footer .link-list .link-image {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.main-footer .link-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.main-footer .link-list ul li {
+  line-height: 12px;
+}
+
+.main-footer .link-list ul a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.main-footer .link-list ul a:hover {
+  color: #0082f9;
+  text-decoration: underline;
+}
+
+.bottom-footer {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-footer .connect {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 20px 0px;
+}
+
+.bottom-footer .connect .btn {
+  background-color: #303030;
+  border: 2px solid #0082f9;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.6rem;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.bottom-footer .connect .icons {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.bottom-footer .connect .icons h3 {
+  color: #0082f9;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.bottom-footer .connect .icons img {
+  width: 25px;
+  margin-left: 8px;
+  cursor: pointer;
 }
 
