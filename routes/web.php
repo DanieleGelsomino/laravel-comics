@@ -18,8 +18,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    $fumetti = @include('../config/comics.php');
+    $fumetti = config('comics');
     return view('homepage', ["comics" => $fumetti ]);
 });
 
-
+Route::get('detail/{id}', function($id) {
+    $fumetti = config('comics');
+    return view('partials.detail', ["comic" => $fumetti[$id]]);
+});

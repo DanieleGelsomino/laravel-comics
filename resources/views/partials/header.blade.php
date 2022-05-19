@@ -1,8 +1,9 @@
 <header>
-        <div class="top-bar">
-            <h3>DC POWER&trade; VISA&reg;</h3>
-            <h3>ADDICTIONAL DC SITES</h3>
-        </div>
+    <div class="top-bar">
+        <h3>DC POWER&trade; VISA&reg;</h3>
+        <h3>ADDICTIONAL DC SITES</h3>
+    </div>
+    <div class="container">
         <div class="menu-navbar">
             <div class="container-logo">
                 <img src="../images/dc-logo.png" alt="DC-logo">
@@ -21,11 +22,10 @@
                 </ul>
             </div>
             <div class="search">
-            <input class="search-bar" type="text" placeholder="Search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+                <input class="search-bar" type="text" placeholder="Search &#xF002;">
             </div>
         </div>
-        <div class="jumbotron"></div>
+    </div>
+
+    <div class="jumbotron"></div>
 </header
-
-

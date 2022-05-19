@@ -14,7 +14,7 @@ body {
   display: flex;
   font-size: 0.6rem;
   padding: 7px;
-  padding-right: 25px;
+  padding-right: 140px;
   justify-content: flex-end;
   background-color: #0082f9;
   color: #fff;
@@ -25,81 +25,103 @@ body {
   font-weight: 600;
 }
 
-.menu-navbar {
-  width: 70%;
-  margin: 0 auto;
+.container {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 20px 0px 13px 0px;
 }
 
-.menu-navbar .container-logo img {
-  width: 75px;
+.container .menu-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
 }
 
-.menu-navbar .container-nav-list ul {
+.container .menu-navbar .container-logo img {
+  width: 80px;
+}
+
+.container .menu-navbar ul {
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
   list-style-type: none;
-  margin: 0 20px;
+  flex-wrap: wrap;
 }
 
-.menu-navbar .container-nav-list ul li a {
+.container .menu-navbar ul li {
   font-size: 0.7rem;
-  margin: 0px 20px;
   font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+.container .menu-navbar ul li a {
   text-decoration: none;
-  padding-bottom: 40px;
-  color: grey;
-  cursor: pointer;
+  color: darkgray;
+  padding-bottom: 43px;
 }
 
-.menu-navbar .container-nav-list ul li a:hover {
-  color: #047ff7;
-  border-bottom: 4px solid #047ff7;
+.container .menu-navbar ul li a:hover {
+  color: #0082f9;
+  border-bottom: 5px solid #0082f9;
 }
 
-.menu-navbar .search {
+.container .menu-navbar .search {
   display: flex;
 }
 
-.menu-navbar .search-bar {
+.container .menu-navbar .search-bar {
   border: none;
   text-align: right;
   font-weight: 600;
   margin-right: 2px;
+  color: darkgray;
+  font-family: "FontAwesome", "Montserrat", sans-serif;
+  font-size: 0.6rem;
 }
 
-.menu-navbar .search-bar:focus-visible {
+.container .menu-navbar .search-bar::-moz-placeholder {
+  color: darkgray;
+}
+
+.container .menu-navbar .search-bar:-ms-input-placeholder {
+  color: darkgray;
+}
+
+.container .menu-navbar .search-bar::placeholder {
+  color: darkgray;
+}
+
+.container .menu-navbar .search-bar:focus-visible {
   outline: none;
   border-bottom: 2px solid #047ff7;
 }
 
-.menu-navbar button {
+.container .menu-navbar button {
   border: none;
   background-color: transparent;
 }
 
-.menu-navbar button i {
-  color: gray;
+.container .menu-navbar button i {
+  color: darkgray;
 }
 
 .jumbotron {
   background-image: url("/images/jumbotron.jpg");
-  height: 300px;
+  height: 350px;
   background-size: cover;
 }
 
 /* ****** MAIN ****** */
 
-.container-comics {
+.container-comics,
+.container-single-card {
   background-color: #1C1C1C;
   position: relative;
 }
 
-.container-comics .content-dc-comics {
+.container-comics .content-dc-comics,
+.container-single-card .content-dc-comics {
   width: 70%;
   margin: auto;
   padding: 30px 0;
@@ -108,29 +130,34 @@ body {
   gap: 15px;
 }
 
-.container-comics .content-dc-comics .comics-card {
+.container-comics .content-dc-comics .comics-card,
+.container-single-card .content-dc-comics .comics-card {
   width: calc(16.6666666667% - 12.5px);
   cursor: pointer;
 }
 
-.container-comics .content-dc-comics .comics-card .img-box {
+.container-comics .content-dc-comics .comics-card .img-box,
+.container-single-card .content-dc-comics .comics-card .img-box {
   width: 130px;
   height: 130px;
   overflow: hidden;
 }
 
-.container-comics .content-dc-comics .comics-card img {
+.container-comics .content-dc-comics .comics-card img,
+.container-single-card .content-dc-comics .comics-card img {
   width: 100%;
 }
 
-.container-comics .content-dc-comics .comics-card p {
+.container-comics .content-dc-comics .comics-card p,
+.container-single-card .content-dc-comics .comics-card p {
   color: #fff;
   font-size: 0.6rem;
   font-weight: 600;
   padding: 10px 0;
 }
 
-.container-comics .label-series {
+.container-comics .label-series,
+.container-single-card .label-series {
   background-color: #0082f9;
   padding: 8px 18px;
   color: #fff;
@@ -138,16 +165,18 @@ body {
   font-size: 0.8rem;
   position: absolute;
   top: -15px;
-  left: 168px;
+  left: 205px;
   cursor: pointer;
 }
 
-.container-comics .container-btn {
+.container-comics .container-btn,
+.container-single-card .container-btn {
   display: flex;
   justify-content: center;
 }
 
-.container-comics .container-btn button {
+.container-comics .container-btn button,
+.container-single-card .container-btn button {
   color: #fff;
   font-weight: 600;
   background-color: #0082f9;
@@ -155,6 +184,11 @@ body {
   padding: 10px 40px;
   margin: 20px 0;
   cursor: pointer;
+}
+
+.container-single-card {
+  height: 100%;
+  padding-bottom: 68.5px;
 }
 
 /* ****** FOOTER ****** */
