@@ -12,29 +12,23 @@ body {
 
 /* ****** HEADER ****** */
 
-.top-bar {
-    display: flex;
-    font-size: 0.6rem;
-    padding: 7px;
-    padding-right: 140px;
-    justify-content:flex-end;
-    background-color:#0082f9 ;
-    color: #fff;
-    h3 {
-        margin-right: 80px;
-        font-weight: 600;
-    }
-}
+
 
 .container {
     display: flex;
     justify-content: center;
-    padding: 20px 0px 13px 0px;
+    padding: 15px 0px 13px 0px;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
 
 
 .menu-navbar {
     display:flex;
     justify-content: space-between;
+
     align-items: center;
     width: 70%;
     .container-logo img {
@@ -106,14 +100,14 @@ body {
     background-image:url("/images/jumbotron.jpg") ;
     height: 350px;
     background-size: cover;
+    margin-top: 90px;
 
 }
 
 
 /* ****** MAIN ****** */
 
-.container-comics,
-.container-single-card {
+.container-comics {
     background-color: #1C1C1C;
     position: relative;
     .content-dc-comics {
@@ -179,6 +173,78 @@ body {
 .container-single-card {
     height: 100%;
     padding-bottom: 68.5px;
+}
+
+.line-card,
+.detail-card {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.detail-card {
+    padding: 50px 0px;
+
+
+    .title-comic{
+        text-transform: uppercase;
+    }
+
+    .status-general {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .price-availability {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        background-color:#55BA59 ;
+        border-bottom: 1px solid black ;
+        border-right: 1px solid black ;
+        padding: 10px 20px;
+        margin-top: 20px;
+        color: rgba(255, 255, 255,0.7);
+        font-weight: 600;
+        font-size: 1.1rem;
+        .price {
+            color: #fff;
+        }
+    }
+
+    .label-check {
+        background-color:#55BA59 ;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-bottom: 1px solid black ;
+        padding: 10px 20px;
+
+
+    }
+
+    .description {
+        font-weight: 600;
+        line-height: 25px;
+        width: 72%;
+        margin-top: 20px;
+        color: rgb(110, 110, 110);
+    }
+}
+
+
+.card {
+    position: absolute;
+    width: 200px;
+    top: 200px;
+    // left: 300px;
+    z-index: 889;
+    border: 1px solid #fff;
+}
+
+.bar-blue {
+    background-color: #0082f9;
+    height: 80px;
+    position: relative;
 }
 
 /* ****** FOOTER ****** */

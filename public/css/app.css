@@ -10,25 +10,15 @@ body {
 
 /* ****** HEADER ****** */
 
-.top-bar {
-  display: flex;
-  font-size: 0.6rem;
-  padding: 7px;
-  padding-right: 140px;
-  justify-content: flex-end;
-  background-color: #0082f9;
-  color: #fff;
-}
-
-.top-bar h3 {
-  margin-right: 80px;
-  font-weight: 600;
-}
-
 .container {
   display: flex;
   justify-content: center;
-  padding: 20px 0px 13px 0px;
+  padding: 15px 0px 13px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .container .menu-navbar {
@@ -110,18 +100,17 @@ body {
   background-image: url("/images/jumbotron.jpg");
   height: 350px;
   background-size: cover;
+  margin-top: 90px;
 }
 
 /* ****** MAIN ****** */
 
-.container-comics,
-.container-single-card {
+.container-comics {
   background-color: #1C1C1C;
   position: relative;
 }
 
-.container-comics .content-dc-comics,
-.container-single-card .content-dc-comics {
+.container-comics .content-dc-comics {
   width: 70%;
   margin: auto;
   padding: 30px 0;
@@ -130,34 +119,29 @@ body {
   gap: 15px;
 }
 
-.container-comics .content-dc-comics .comics-card,
-.container-single-card .content-dc-comics .comics-card {
+.container-comics .content-dc-comics .comics-card {
   width: calc(16.6666666667% - 12.5px);
   cursor: pointer;
 }
 
-.container-comics .content-dc-comics .comics-card .img-box,
-.container-single-card .content-dc-comics .comics-card .img-box {
+.container-comics .content-dc-comics .comics-card .img-box {
   width: 130px;
   height: 130px;
   overflow: hidden;
 }
 
-.container-comics .content-dc-comics .comics-card img,
-.container-single-card .content-dc-comics .comics-card img {
+.container-comics .content-dc-comics .comics-card img {
   width: 100%;
 }
 
-.container-comics .content-dc-comics .comics-card p,
-.container-single-card .content-dc-comics .comics-card p {
+.container-comics .content-dc-comics .comics-card p {
   color: #fff;
   font-size: 0.6rem;
   font-weight: 600;
   padding: 10px 0;
 }
 
-.container-comics .label-series,
-.container-single-card .label-series {
+.container-comics .label-series {
   background-color: #0082f9;
   padding: 8px 18px;
   color: #fff;
@@ -169,14 +153,12 @@ body {
   cursor: pointer;
 }
 
-.container-comics .container-btn,
-.container-single-card .container-btn {
+.container-comics .container-btn {
   display: flex;
   justify-content: center;
 }
 
-.container-comics .container-btn button,
-.container-single-card .container-btn button {
+.container-comics .container-btn button {
   color: #fff;
   font-weight: 600;
   background-color: #0082f9;
@@ -189,6 +171,74 @@ body {
 .container-single-card {
   height: 100%;
   padding-bottom: 68.5px;
+}
+
+.line-card,
+.detail-card {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.detail-card {
+  padding: 50px 0px;
+}
+
+.detail-card .title-comic {
+  text-transform: uppercase;
+}
+
+.detail-card .status-general {
+  display: flex;
+  align-items: flex-end;
+}
+
+.detail-card .price-availability {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  background-color: #55BA59;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.detail-card .price-availability .price {
+  color: #fff;
+}
+
+.detail-card .label-check {
+  background-color: #55BA59;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+}
+
+.detail-card .description {
+  font-weight: 600;
+  line-height: 25px;
+  width: 72%;
+  margin-top: 20px;
+  color: rgb(110, 110, 110);
+}
+
+.card {
+  position: absolute;
+  width: 200px;
+  top: 200px;
+  z-index: 889;
+  border: 1px solid #fff;
+}
+
+.bar-blue {
+  background-color: #0082f9;
+  height: 80px;
+  position: relative;
 }
 
 /* ****** FOOTER ****** */

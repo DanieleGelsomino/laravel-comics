@@ -1,8 +1,4 @@
 <header>
-    <div class="top-bar">
-        <h3>DC POWER&trade; VISA&reg;</h3>
-        <h3>ADDICTIONAL DC SITES</h3>
-    </div>
     <div class="container">
         <div class="menu-navbar">
             <div class="container-logo">
